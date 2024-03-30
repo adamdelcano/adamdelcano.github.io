@@ -14,7 +14,7 @@ export default function Home() {
 
   useEffect(() => {
     const nameTyped = new Typed(myName.current, {
-      strings: ["Adam del Cano"],
+      strings: ["^100Adam del Cano"],
       typeSpeed: 50,
     });
     const missionTyped = new Typed(mission.current, {
