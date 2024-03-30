@@ -40,7 +40,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18">
+    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 crt">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </div>
       </form>
-      <p className="text-green-400 font-mono self-start max-w-lg crt">
+      <p className="text-green-400 font-mono self-start max-w-lg">
         Surely thou wert void of greatness,
         <br />
         Having neither strength nor beauty,
