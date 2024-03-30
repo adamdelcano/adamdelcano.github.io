@@ -114,7 +114,6 @@ export default function Home() {
       </form>
       <div className="flex flex-row justify-between w-full">
       <p className="text-green-400 font-mono w-1/3">
-        <p className="text-green-600">-Cursed be <span className="text-gray-600">Iron</span>-</p>
         Surely thou wert void of greatness,
         <br />
         Having neither strength nor beauty,
@@ -160,21 +159,20 @@ export default function Home() {
         By the <span className="text-red-400">fire</span> within the <span className="text-red-400">furnace</span>.
         <br />
       </p>
-      <div className="font-mono w-1/3 text-green-400">
-      <p className="text-center text-green-600">-Contacts-</p>
-      <p><span className="text-green-600">For Professional Inquiries: </span>adam.j.delcano@gmail.com</p>
+      </div>
+      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs">
+      <p><span className="text-green-600">Professional Inquiries: </span>adam.j.delcano@gmail.com</p>
       <p><span className="text-green-600">Personal Contact: </span> robotmascot@gmail.com</p>
       <p><span className="text-green-600">Elsewhere: </span> Wherever robotmascot isn&apos;t the UK marketing agency</p>
-      </div>
-      </div>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-center w-full text-green-400 font-mono ">
+      <p className="flex flex-row self-center">
         <span>
           <Image width={32} height={32} src="/grunt.png" alt="Grunt" />
         </span>
-        <p className="text-xs">2024 Adam del Cano</p>
+        <span className="self-center">2024 Adam del Cano</span>
         <span>
           <Image width={32} height={32} src="/grunt-defend-2.png" alt="Grunt" />
         </span>
+      </p>
       </footer>
     </main>
   );
