@@ -42,7 +42,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
-        <p className="flex flex-row text-5xl">⍝</p>
+        <p className="flex flex-row text-5xl has-tooltip">
+          ⍝
+          <span className="tooltip text-xs m-18">
+            If you&apos;re curious, this is the{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols"
+              target="_blank"
+            >
+              APL
+            </a>{" "}
+            symbol for comment, sometimes named a lamp.
+          </span>
+        </p>
         <div className="flex flex-row text-xl justify-between gap-6">
           <a href="#" className="m-auto">
             DEEDS
@@ -100,10 +112,21 @@ export default function Home() {
           </div>
         </div>
       </form>
+      <p className="text-green-400 font-mono self-start max-w-lg">
+        I cannot emphasize enough how much you should not be here. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ipsa, libero sequi maxime
+        repellat earum consequuntur voluptatibus ex, quasi, alias minus
+        reprehenderit molestiae! At earum tenetur est quos laborum aliquid
+        dolorum!
+      </p>
       <footer className="fixed bottom-0 flex flex-row items-center justify-center w-full text-green-400 font-mono ">
-        <p className="text-xs">
-          2024 Adam del Cano (big surprise on that name, I know)
-        </p>
+        <span>
+          <Image width={32} height={32} src="/grunt.png" alt="Grunt" />
+        </span>
+        <p className="text-xs">2024 Adam del Cano</p>
+        <span>
+          <Image width={32} height={32} src="/grunt-defend-2.png" alt="Grunt" />
+        </span>
       </footer>
     </main>
   );
