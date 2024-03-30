@@ -113,66 +113,93 @@ export default function Home() {
         </div>
       </form>
       <div className="flex flex-row justify-between w-full">
-      <p className="text-green-400 font-mono w-1/3">
-        Surely thou wert void of greatness,
-        <br />
-        Having neither strength nor beauty,
-        <br />
-        When the moose was trampling on thee,
-        <br />
-        When the roebuck trod upon thee,
-        <br />
-        When the tracks of wolves were in thee,
-        <br />
-        And the bear-paws scratched thy body.
-        <br />
-        Surely thou hadst little value
-        <br />
-        When the skilful Ilmarinen,
-        <br />
-        First of all the iron-workers,
-        <br />
-        Brought thee from the blackened swamp-lands,
-        <br />
-        Took thee to his ancient smithy,
-        <br />
-        Placed thee in his fiery furnace.
-        <br />
-        Truly thou hadst little vigor,
-        <br />
-        Little strength, and little danger,
-        <br />
-        When thou in the fire wert hissing,
-        <br />
-        Rolling forth like seething water,
-        <br />
-        From the furnace of the smithy,
-        <br />
-        When thou gavest oath the strongest,
-        <br />
-        By the furnace, by the anvil,
-        <br />
-        By the tongs, and by the hammer,
-        <br />
-        By the dwelling of the blacksmith,
-        <br />
-        By the <span className="text-red-400">fire</span> within the <span className="text-red-400">furnace</span>.
-        <br />
-      </p>
+        <p className="text-green-400 font-mono w-1/3">
+          Surely <span className="text-gray-600">thou</span> wert void of
+          greatness,
+          <br />
+          Having neither strength nor beauty,
+          <br />
+          When the moose was trampling on{" "}
+          <span className="text-gray-600">thee</span>,
+          <br />
+          When the roebuck trod upon <span className="text-gray-600">thee</span>
+          ,
+          <br />
+          When the tracks of wolves were in{" "}
+          <span className="text-gray-600">thee</span>,
+          <br />
+          And the bear-paws scratched <span className="text-gray-600">
+            thy
+          </span>{" "}
+          body.
+          <br />
+          Surely <span className="text-gray-600">thou</span> hadst little value
+          <br />
+          When the skilful Ilmarinen,
+          <br />
+          First of all the iron-workers,
+          <br />
+          Brought <span className="text-gray-600">thee</span> from the blackened
+          swamp-lands,
+          <br />
+          Took <span className="text-gray-600">thee</span> to his ancient
+          smithy,
+          <br />
+          Placed <span className="text-gray-600">thee</span> in his fiery
+          furnace.
+          <br />
+          Truly <span className="text-gray-600">thou</span> hadst little vigor,
+          <br />
+          Little strength, and little danger,
+          <br />
+          When <span className="text-gray-600">thou</span> in the fire wert
+          hissing,
+          <br />
+          Rolling forth like seething water,
+          <br />
+          From the furnace of the smithy,
+          <br />
+          When <span className="text-gray-600">thou</span> gavest oath the
+          strongest,
+          <br />
+          By the furnace, by the anvil,
+          <br />
+          By the tongs, and by the hammer,
+          <br />
+          By the dwelling of the blacksmith,
+          <br />
+          By the <span className="text-red-400">fire</span> within the{" "}
+          <span className="text-red-400">furnace</span>.
+          <br />
+        </p>
       </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs">
-      <p><span className="text-green-600">Professional Inquiries: </span>adam.j.delcano@gmail.com</p>
-      <p><span className="text-green-600">Personal Contact: </span> robotmascot@gmail.com</p>
-      <p><span className="text-green-600">Elsewhere: </span> Wherever robotmascot isn&apos;t the UK marketing agency</p>
-      <p className="flex flex-row self-center">
-        <span>
-          <Image width={32} height={32} src="/grunt.png" alt="Grunt" />
-        </span>
-        <span className="self-center">2024 Adam del Cano</span>
-        <span>
-          <Image width={32} height={32} src="/grunt-defend-2.png" alt="Grunt" />
-        </span>
-      </p>
+        <p>
+          <span className="text-green-600">Professional Inquiries: </span>
+          adam.j.delcano@gmail.com
+        </p>
+        <p>
+          <span className="text-green-600">Personal Contact: </span>{" "}
+          robotmascot@gmail.com
+        </p>
+        <p>
+          <span className="text-green-600">Elsewhere: </span> Wherever
+          robotmascot isn&apos;t the UK marketing agency
+        </p>
+        <p className="flex flex-row self-center">
+          <span>
+            <Image width={32} height={32} src="/grunt.png" alt="Grunt" />
+          </span>
+          <span className="self-center">2024 Adam del Cano</span>
+          <span>
+            <Image
+              width={32}
+              height={32}
+              src="/grunt-defend-2.png"
+              alt="Grunt"
+            />
+          </span>
+        </p>
       </footer>
     </main>
   );
