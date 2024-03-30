@@ -112,12 +112,51 @@ export default function Home() {
           </div>
         </div>
       </form>
-      <p className="text-green-400 font-mono self-start max-w-lg">
-        I cannot emphasize enough how much you should not be here. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Ipsa, libero sequi maxime
-        repellat earum consequuntur voluptatibus ex, quasi, alias minus
-        reprehenderit molestiae! At earum tenetur est quos laborum aliquid
-        dolorum!
+      <p className="text-green-400 font-mono self-start max-w-lg crt">
+        Surely thou wert void of greatness,
+        <br />
+        Having neither strength nor beauty,
+        <br />
+        When the moose was trampling on thee,
+        <br />
+        When the roebuck trod upon thee,
+        <br />
+        When the tracks of wolves were in thee,
+        <br />
+        And the bear-paws scratched thy body.
+        <br />
+        Surely thou hadst little value
+        <br />
+        When the skilful Ilmarinen,
+        <br />
+        First of all the iron-workers,
+        <br />
+        Brought thee from the blackened swamp-lands,
+        <br />
+        Took thee to his ancient smithy,
+        <br />
+        Placed thee in his fiery furnace.
+        <br />
+        Truly thou hadst little vigor,
+        <br />
+        Little strength, and little danger,
+        <br />
+        When thou in the fire wert hissing,
+        <br />
+        Rolling forth like seething water,
+        <br />
+        From the furnace of the smithy,
+        <br />
+        When thou gavest oath the strongest,
+        <br />
+        By the furnace, by the anvil,
+        <br />
+        By the tongs, and by the hammer,
+        <br />
+        By the dwelling of the blacksmith,
+        <br />
+        By the <span className="text-red-400">fire</span> within the <span className="text-red-400">furnace</span>.
+        <br />
       </p>
       <footer className="fixed bottom-0 flex flex-row items-center justify-center w-full text-green-400 font-mono ">
         <span>
