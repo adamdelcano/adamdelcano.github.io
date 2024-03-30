@@ -56,10 +56,10 @@ export default function Home() {
           </span>
         </p>
         <div className="flex flex-row text-xl justify-between gap-6">
-          <a href="#" className="m-auto">
+          <a href="#" className="m-auto hover:bg-green-900">
             DEEDS
           </a>
-          <a href="#" className="m-auto">
+          <a href="#" className="m-auto hover:bg-green-900">
             [REDACTED]
           </a>
         </div>
@@ -112,7 +112,9 @@ export default function Home() {
           </div>
         </div>
       </form>
-      <p className="text-green-400 font-mono self-start max-w-lg">
+      <div className="flex flex-row justify-between w-full">
+      <p className="text-green-400 font-mono w-1/3">
+        <p className="text-green-600">-Cursed be <span className="text-gray-600">Iron</span>-</p>
         Surely thou wert void of greatness,
         <br />
         Having neither strength nor beauty,
@@ -158,6 +160,13 @@ export default function Home() {
         By the <span className="text-red-400">fire</span> within the <span className="text-red-400">furnace</span>.
         <br />
       </p>
+      <div className="font-mono w-1/3 text-green-400">
+      <p className="text-center text-green-600">-Contacts-</p>
+      <p><span className="text-green-600">For Professional Inquiries: </span>adam.j.delcano@gmail.com</p>
+      <p><span className="text-green-600">Personal Contact: </span> robotmascot@gmail.com</p>
+      <p><span className="text-green-600">Elsewhere: </span> Wherever robotmascot isn&apos;t the UK marketing agency</p>
+      </div>
+      </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-center w-full text-green-400 font-mono ">
         <span>
           <Image width={32} height={32} src="/grunt.png" alt="Grunt" />
