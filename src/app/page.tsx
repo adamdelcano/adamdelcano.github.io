@@ -46,7 +46,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 bg-background-main bg-cover">
+    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-bg-indigo-950 bg-cover">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
@@ -62,10 +62,10 @@ export default function Home() {
           </span>
         </p>
         <div className="flex flex-row text-xl justify-between gap-6">
-          <a href="#" className="m-auto hover:bg-background-focus">
+          <a href="#" className="m-auto hover:bg-bg-green-900">
             DEEDS
           </a>
-          <a href="#" className="m-auto hover:bg-background-focus">
+          <a href="#" className="m-auto hover:bg-bg-green-900">
             [REDACTED]
           </a>
         </div>
