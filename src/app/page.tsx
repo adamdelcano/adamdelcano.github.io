@@ -225,12 +225,6 @@ export default function Home() {
           robotmascot isn&apos;t the UK marketing agency (no offense, they&apos;re nice)
         </p>
         <p className="flex flex-row self-center">2024 Adam del Cano</p>
-        <p>
-          <a href="https://www.freepik.com/free-vector/retro-futuristic-landscape-background-with-sun_5072281.htm#query=horizon%20grid&position=8&from_view=keyword&track=ais&uuid=e6966af8-f0dd-4c34-adf6-33cab7e6124a">
-            Background Image by pikisuperstar
-          </a>{" "}
-          on Freepik
-        </p>
       </footer>
     </main>
   );
