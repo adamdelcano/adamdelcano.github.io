@@ -46,7 +46,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 crt bg-[url('/2630264.jpg')] bg-cover">
+    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 crt bg-background-main bg-cover">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
@@ -135,7 +135,6 @@ export default function Home() {
           </div>
         </form>
         <div
-          id="typed-message"
           className="flex self-center align-center items-center justify-center mx-auto"
         >
           <p className="text-green-300 font-mono rounded py-3 px-4 pr-1 mt-24 text-sm bg-gray-700/75">
@@ -208,7 +207,7 @@ export default function Home() {
           <span className="text-green-400">Python, GraphQL, MongoDB</span>
           <br />
           Familiar Spirit:{" "}
-          <span className="text-green-400">Peridot the cat</span>
+          <span className="text-green-400">Peridot (black cat)</span>
         </p>
 
       </div>
@@ -223,7 +222,7 @@ export default function Home() {
         </p>
         <p>
           <span className="text-green-600">Elsewhere: </span> Wherever
-          robotmascot isn&apos;t the UK marketing agency
+          robotmascot isn&apos;t the UK marketing agency (no offense, they&apos;re nice)
         </p>
         <p className="flex flex-row self-center">2024 Adam del Cano</p>
         <p>
