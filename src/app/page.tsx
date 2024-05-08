@@ -46,7 +46,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 bg-gray-900 bg-cover">
+    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 bg-background-main bg-cover">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝

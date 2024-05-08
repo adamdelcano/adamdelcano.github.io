@@ -18,7 +18,7 @@ const config: Config = {
       colors: {
         'background-focus': '#FF005A',
         'text-main': '#FFA500',
-        'background-main': '#005AFF',
+        'background-main': '#2a2536',
         'text-focus': '#00FFA5',
       }
     },
