@@ -62,10 +62,10 @@ export default function Home() {
           </span>
         </p>
         <div className="flex flex-row text-xl justify-between gap-6">
-          <a href="#" className="m-auto hover:bg-green-900">
+          <a href="#" className="m-auto hover:bg-background-focus">
             DEEDS
           </a>
-          <a href="#" className="m-auto hover:bg-green-900">
+          <a href="#" className="m-auto hover:bg-background-focus">
             [REDACTED]
           </a>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
                 Who is this clown?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 mb-3 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 mb-3 leading-tight disabled"
                 id="grid-name"
                 type="text"
                 ref={myName}
@@ -95,7 +95,7 @@ export default function Home() {
                 What does he do?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="grid-mission"
                 type="text"
                 placeholder=""
@@ -112,7 +112,7 @@ export default function Home() {
                 Why should I care?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="grid-password"
                 ref={whyCare}
               />
@@ -127,7 +127,7 @@ export default function Home() {
                 How can I get in touch?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="contact-pointer"
                 ref={contactPointer}
               />
@@ -199,19 +199,19 @@ export default function Home() {
         <p className="max-w-lg text-green-500">
           <br />
           Familiar Frontend stack:{" "}
-          <span className="text-green-400">
+          <span className="text-text-main">
             TypeScript, React, Next.js, Tailwind CSS
           </span>
           <br />
           Familiar Backend stack:{" "}
-          <span className="text-green-400">Python, GraphQL, MongoDB</span>
+          <span className="text-text-main">Python, GraphQL, MongoDB</span>
           <br />
           Familiar Spirit:{" "}
-          <span className="text-green-400">Peridot (black cat)</span>
+          <span className="text-text-main">Peridot (black cat)</span>
         </p>
 
       </div>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
+      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-text-main font-mono text-xs bg-gray-900/75">
         <p>
           <span className="text-green-600">Professional Inquiries: </span>
           adam.j.delcano@gmail.com
