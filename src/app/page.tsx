@@ -46,8 +46,8 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 bg-background-main bg-cover">
-      <header className="flex flex-row justify-between w-full text-text-main font-mono p-18">
+    <main className="flex min-h-screen flex-col items-center justify-start p-12 px-18 bg-gray-900 bg-cover">
+      <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
           <span className="tooltip text-xs m-18">
@@ -81,7 +81,7 @@ export default function Home() {
                 Who is this clown?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 mb-3 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 mb-3 leading-tight disabled"
                 id="grid-name"
                 type="text"
                 ref={myName}
@@ -95,7 +95,7 @@ export default function Home() {
                 What does he do?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="grid-mission"
                 type="text"
                 placeholder=""
@@ -112,7 +112,7 @@ export default function Home() {
                 Why should I care?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="grid-password"
                 ref={whyCare}
               />
@@ -127,7 +127,7 @@ export default function Home() {
                 How can I get in touch?
               </label>
               <input
-                className="appearance-none block w-full bg-gray-900 text-text-main border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="contact-pointer"
                 ref={contactPointer}
               />
@@ -199,19 +199,19 @@ export default function Home() {
         <p className="max-w-lg text-green-500">
           <br />
           Familiar Frontend stack:{" "}
-          <span className="text-text-main">
+          <span className="text-green-400">
             TypeScript, React, Next.js, Tailwind CSS
           </span>
           <br />
           Familiar Backend stack:{" "}
-          <span className="text-text-main">Python, GraphQL, MongoDB</span>
+          <span className="text-green-400">Python, GraphQL, MongoDB</span>
           <br />
           Familiar Spirit:{" "}
-          <span className="text-text-main">Peridot (black cat)</span>
+          <span className="text-green-400">Peridot (black cat)</span>
         </p>
 
       </div>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-text-main font-mono text-xs bg-gray-900/75">
+      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
         <p>
           <span className="text-green-600">Professional Inquiries: </span>
           adam.j.delcano@gmail.com
