@@ -46,7 +46,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-indigo-950 bg-cover">
+    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-sly-950 bg-cover">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
         </form>
         <div
-          className="flex self-center align-center items-center justify-center mx-auto"
+          className="flex self-center align-center items-center justify-center mx-auto crt"
         >
           <p className="text-green-300 font-mono rounded py-3 px-4 pr-1 mt-24 text-sm bg-gray-700/75">
             Surely <span className="text-red-100">thou</span> wert void of
