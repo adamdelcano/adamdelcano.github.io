@@ -134,68 +134,6 @@ export default function Home() {
             </div>
           </div>
         </form>
-        <div
-          className="flex self-center align-center items-center justify-center mx-auto crt"
-        >
-          <p className="text-green-300 font-mono rounded py-3 px-4 pr-1 mt-24 text-sm bg-gray-700/75">
-            Surely <span className="text-red-100">thou</span> wert void of
-            greatness,
-            <br />
-            Having neither strength nor beauty,
-            <br />
-            When the moose was trampling on{" "}
-            <span className="text-red-100">thee</span>,
-            <br />
-            When the roebuck trod upon{" "}
-            <span className="text-red-100">thee</span>
-            ,
-            <br />
-            When the tracks of wolves were in{" "}
-            <span className="text-red-100">thee</span>,
-            <br />
-            And the bear-paws scratched{" "}
-            <span className="text-red-200">thy</span> body.
-            <br />
-            Surely <span className="text-red-200">thou</span> hadst little value
-            <br />
-            When the skilful Ilmarinen,
-            <br />
-            First of all the iron-workers,
-            <br />
-            Brought <span className="text-red-200">thee</span> from the
-            blackened swamp-lands,
-            <br />
-            Took <span className="text-red-200">thee</span> to his ancient
-            smithy,
-            <br />
-            Placed <span className="text-red-300">thee</span> in his fiery
-            furnace.
-            <br />
-            Truly <span className="text-red-300">thou</span> hadst little vigor,
-            <br />
-            Little strength, and little danger,
-            <br />
-            When <span className="text-red-300">thou</span> in the fire wert
-            hissing,
-            <br />
-            Rolling forth like seething water,
-            <br />
-            From the furnace of the smithy,
-            <br />
-            When <span className="text-red-300">thou</span> gavest oath the
-            strongest,
-            <br />
-            By the furnace, by the anvil,
-            <br />
-            By the tongs, and by the hammer,
-            <br />
-            By the dwelling of the blacksmith,
-            <br />
-            By the <span className="text-red-500">fire</span> within the{" "}
-            <span className="text-red-600">furnace</span>.
-            <br />
-          </p>
-        </div>
         <p className="max-w-lg text-green-500">
           <br />
           Familiar Frontend stack:{" "}
@@ -209,7 +147,6 @@ export default function Home() {
           Familiar Spirit:{" "}
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
-
       </div>
       <div className="flex flex-row w-full justify-evenly">
       <div className="scene">
