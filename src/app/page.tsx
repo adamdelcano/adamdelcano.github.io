@@ -46,11 +46,11 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-24 bg-cover bg-slate-950">
+    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-cover bg-slate-950">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
-          <span className="tooltip text-xs m-24 bg-slate-900">
+          <span className="tooltip text-xs m-18 bg-slate-900">
             If you&apos;re curious, this is the{" "}
             <a
               href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols"
@@ -210,6 +210,16 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
 
+      </div>
+      <div className="scene">
+        <div className="cube">
+          <div className="cube__face cube__face--front">front</div>
+          <div className="cube__face cube__face--back">back</div>
+          <div className="cube__face cube__face--right">right</div>
+          <div className="cube__face cube__face--left">left</div>
+          <div className="cube__face cube__face--top">top</div>
+          <div className="cube__face cube__face--bottom">bottom</div>
+        </div>
       </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
         <p>
