@@ -56,6 +56,7 @@ body {
   transform: translateZ(-100px);
   rotate: 45deg;
   transition: transform 1s;
+  animation: rotate3D 5s linear infinite;
 }
 
 .cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
@@ -90,5 +91,10 @@ body {
 .cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
 .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate3D {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
 
 label { margin-right: 10px; }
