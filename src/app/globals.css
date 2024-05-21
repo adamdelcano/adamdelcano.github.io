@@ -41,16 +41,16 @@ body {
 }
 
 .scene {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #CCC;
-  margin: 80px;
+  margin: 100px;
   perspective: 400px;
 }
 
 .cube {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
@@ -68,10 +68,10 @@ body {
 
 .cube__face {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 2px solid black;
-  line-height: 200px;
+  line-height: 150px;
   font-size: 40px;
   font-weight: bold;
   color: white;
