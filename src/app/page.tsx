@@ -211,6 +211,7 @@ export default function Home() {
         </p>
 
       </div>
+      <div className="flex flex-row w-full justify-evenly">
       <div className="scene">
         <div className="cube">
           <div className="cube__face cube__face--front">front</div>
@@ -240,6 +241,7 @@ export default function Home() {
           <div className="cube__face cube__face--top">top</div>
           <div className="cube__face cube__face--bottom">bottom</div>
         </div>
+      </div>
       </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
         <p>
