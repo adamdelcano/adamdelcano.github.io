@@ -46,11 +46,11 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-sly-950 bg-cover">
+    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-24 bg-cover bg-slate-950">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
-          <span className="tooltip text-xs m-18">
+          <span className="tooltip text-xs m-24 bg-slate-900">
             If you&apos;re curious, this is the{" "}
             <a
               href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols"
