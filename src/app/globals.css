@@ -53,7 +53,7 @@ body {
   height: 200px;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: rotateX(45deg) translateZ(-100px);
   transition: transform 1s;
   animation: rotate3D 5s linear infinite;
 }
@@ -84,9 +84,9 @@ body {
 .cube__face--top    { background: hsla(240, 100%, 50%, 0.7); }
 .cube__face--bottom { background: hsla(300, 100%, 50%, 0.7); }
 
-.cube__face--front  { transform: rotateY(  0deg) rotateX( 45deg) translateZ(100px); }
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
-.cube__face--back   { transform: rotateY(180deg) rotateX( 45deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
 .cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
 .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
