@@ -148,6 +148,7 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
       </div>
+      <div className="bg-image[url('data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==');]"/>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="solid">
         <div className="side">1</div>
