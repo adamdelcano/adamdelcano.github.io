@@ -43,8 +43,8 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  -webkit-animation: spin 24s infinite linear;
-          animation: spin 24s infinite linear;
+  -webkit-animation: spin 32s infinite linear;
+          animation: spin 32s infinite linear;
   transform-style: preserve-3d;
 }
 .solid .side {
@@ -103,6 +103,6 @@ body {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(1080deg) rotateZ(0);
+    transform: rotateX(0deg) rotateY(1080deg) rotateZ(360deg);
   }
 }
