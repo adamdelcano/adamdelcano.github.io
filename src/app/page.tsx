@@ -151,64 +151,64 @@ export default function Home() {
       <div className="flex flex-row w-full justify-evenly">
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front" />
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front"/>
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front"/>
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       </div>
       <div className="flex flex-row w-full justify-evenly">
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front"/>
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front"/>
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       <div className="scene">
         <div className="cube">
-          <div className="cube__face cube__face--front">front</div>
-          <div className="cube__face cube__face--back">back</div>
-          <div className="cube__face cube__face--right">right</div>
-          <div className="cube__face cube__face--left">left</div>
-          <div className="cube__face cube__face--top">top</div>
-          <div className="cube__face cube__face--bottom">bottom</div>
+          <div className="cube__face cube__face--front"/>
+          <div className="cube__face cube__face--back"/>
+          <div className="cube__face cube__face--right"/>
+          <div className="cube__face cube__face--left"/>
+          <div className="cube__face cube__face--top"/>
+          <div className="cube__face cube__face--bottom"/>
         </div>
       </div>
       </div>
