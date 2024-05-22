@@ -91,18 +91,18 @@ body {
 
 @-webkit-keyframes spin {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+    transform: rotateY(360deg);
   }
 }
 
 @keyframes spin {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateY(0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+    transform: rotateY(360deg);
   }
 }
