@@ -148,7 +148,7 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
       </div>
-      <div className="bg-[url('/triangle.svg');]">
+      <div className="bg-[url('/grunt.png');]">
       <p>this is a test</p>
       </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
