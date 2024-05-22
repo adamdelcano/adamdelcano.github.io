@@ -53,7 +53,7 @@ body {
   bottom: 50%;
   height: 173.2px;
   width: 200px;
-  background-image: url("data:image/svg+xml;base64,ICA8c3ZnIGlkPSJ0cmlhbmdsZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzM2LjkyIDI5MS43NSI+CiAgICA8cG9seWdvbiBwb2ludHM9IjMzNC43NSAyOTAuNSAyLjE3IDI5MC41IDE2OC40NyAyLjUgMzM0Ljc1IDI5MC41IiBmaWxsPSJyZ2JhKDI1NSwyNTUsMjU1LDAuNDUpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+CiAgPC9zdmc+");
+  background-image: url("/triangle.svg");
   transform-origin: 50% 100%;
 }
 .solid .side:nth-child(1) {
@@ -100,9 +100,9 @@ body {
 
 @keyframes spin {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
   }
   100% {
-    transform: rotateX(0deg) rotateY(1080deg) rotateZ(360deg);
+    transform: rotateX(0deg) rotateY(1080deg) rotateZ(45deg);
   }
 }
