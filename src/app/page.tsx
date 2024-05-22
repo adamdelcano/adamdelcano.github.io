@@ -148,7 +148,7 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
       </div>
-      <div className="bg-[url('/grunt.png');]">
+      <div className="bg-[url('/triangle.svg');]">
       <p>this is a test</p>
       </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
@@ -164,16 +164,17 @@ export default function Home() {
         <div className="side">8</div>
       </div>
       <div className="solid">
-        <div className="side">IN</div>
-        <div className="side">NOMINE</div>
-        <div className="side">DEUS</div>
-        <div className="side">IMPERATOR</div>
+        <div className="side">Adam</div>
+        <div className="side">Jeffrey</div>
+        <div className="side">del</div>
+        <div className="side">Cano</div>
         
-        <div className="side">GLORIAM</div>
-        <div className="side">AD</div>
-        <div className="side">OMNISSIAH</div>
-        <div className="side">MECHANICUM</div>
+        <div className="side">Frontend</div>
+        <div className="side">Backend</div>
+        <div className="side">Full Stack</div>
+        <div className="side">Web Dev</div>
       </div>
+      <div className="border-4 border-slate-600">
       <div className="solid">
         <div className="side"></div>
         <div className="side"></div>
@@ -184,6 +185,7 @@ export default function Home() {
         <div className="side"></div>
         <div className="side"></div>
         <div className="side"></div>
+      </div>
       </div>
       </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
