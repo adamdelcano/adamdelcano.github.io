@@ -148,7 +148,9 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
       </div>
-      <div className="bg-image[url('data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==');]"/>
+      <div className="bg-image[url('data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==');]">
+      <p>this is a test</p>
+      </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="solid">
         <div className="side">1</div>
@@ -162,15 +164,15 @@ export default function Home() {
         <div className="side">8</div>
       </div>
       <div className="solid">
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
+        <div className="side">IN</div>
+        <div className="side">NOMINE</div>
+        <div className="side">DEUS</div>
+        <div className="side">IMPERATOR</div>
         
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
+        <div className="side">GLORIAM</div>
+        <div className="side">AD</div>
+        <div className="side">OMNISSIAH</div>
+        <div className="side">MECHANICUM</div>
       </div>
       <div className="solid">
         <div className="side"></div>
