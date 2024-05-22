@@ -150,15 +150,15 @@ export default function Home() {
       </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="solid">
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
+        <div className="side">1</div>
+        <div className="side">2</div>
+        <div className="side">3</div>
+        <div className="side">4</div>
         
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
-        <div className="side"></div>
+        <div className="side">5</div>
+        <div className="side">6</div>
+        <div className="side">7</div>
+        <div className="side">8</div>
       </div>
       <div className="solid">
         <div className="side"></div>
