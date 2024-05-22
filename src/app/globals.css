@@ -58,14 +58,17 @@ body {
 }
 .solid .side:nth-child(1) {
   transform: rotateY(90deg) translateZ(100px) rotateX(35.27deg);
+  background-color: red;
   border-bottom-color: rgba(152, 254, 208, 0.4);
 }
 .solid .side:nth-child(2) {
   transform: rotateY(180deg) translateZ(100px) rotateX(35.27deg);
+  background-color: blue;
   border-bottom-color: rgba(178, 184, 33, 0.4);
 }
 .solid .side:nth-child(3) {
   transform: rotateY(270deg) translateZ(100px) rotateX(35.27deg);
+  background-color: green;
   border-bottom-color: rgba(58, 54, 154, 0.4);
 }
 .solid .side:nth-child(4) {
