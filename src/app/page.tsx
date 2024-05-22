@@ -174,7 +174,7 @@ export default function Home() {
         <div className="side">Full Stack</div>
         <div className="side">Web Dev</div>
       </div>
-      <div className="border-4 border-slate-600 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
+      <div className="border-4 border-slate-600 before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 before:scale-50 relative inline-block">
       <div className="solid">
         <div className="side"></div>
         <div className="side"></div>
