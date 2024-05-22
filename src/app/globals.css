@@ -53,7 +53,7 @@ body {
   bottom: 50%;
   height: 173.2px;
   width: 200px;
-  background-image: linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(135deg, rgba(0, 0, 0, 0.1) 50%, transparent 50%);
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==");
   transform-origin: 50% 100%;
 }
 .solid .side:nth-child(1) {
