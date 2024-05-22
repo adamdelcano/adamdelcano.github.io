@@ -100,9 +100,9 @@ body {
 
 @keyframes spin {
   0% {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(15deg);
   }
   100% {
-    transform: rotateX(0deg) rotateY(1080deg) rotateZ(45deg);
+    transform: rotateX(0deg) rotateY(1080deg) rotateZ(15deg);
   }
 }
