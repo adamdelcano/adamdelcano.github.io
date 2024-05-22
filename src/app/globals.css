@@ -53,22 +53,19 @@ body {
   bottom: 50%;
   height: 173.2px;
   width: 200px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==");
   transform-origin: 50% 100%;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 .solid .side:nth-child(1) {
   transform: rotateY(90deg) translateZ(100px) rotateX(35.27deg);
-  background-color: red;
   border-bottom-color: rgba(152, 254, 208, 0.4);
 }
 .solid .side:nth-child(2) {
   transform: rotateY(180deg) translateZ(100px) rotateX(35.27deg);
-  background-color: blue;
   border-bottom-color: rgba(178, 184, 33, 0.4);
 }
 .solid .side:nth-child(3) {
   transform: rotateY(270deg) translateZ(100px) rotateX(35.27deg);
-  background-color: green;
   border-bottom-color: rgba(58, 54, 154, 0.4);
 }
 .solid .side:nth-child(4) {
@@ -94,18 +91,18 @@ body {
 
 @-webkit-keyframes spin {
   0% {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateY(360deg);
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
   }
 }
 
 @keyframes spin {
   0% {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   }
   100% {
-    transform: rotateY(360deg);
+    transform: rotateX(0) rotateY(360deg) rotateZ(0);
   }
 }
