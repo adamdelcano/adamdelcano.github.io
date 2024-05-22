@@ -148,7 +148,7 @@ export default function Home() {
           <span className="text-green-400">Peridot (black cat)</span>
         </p>
       </div>
-      <div className="flex flex-row w-full justify-evenly my-5">
+      <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="solid">
         <div className="side"></div>
         <div className="side"></div>
@@ -183,7 +183,7 @@ export default function Home() {
         <div className="side"></div>
       </div>
       </div>
-      <div className="flex flex-row w-full justify-evenly my-5">
+      <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="solid">
         <div className="side"></div>
         <div className="side"></div>
