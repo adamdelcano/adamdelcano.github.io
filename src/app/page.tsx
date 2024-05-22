@@ -149,67 +149,73 @@ export default function Home() {
         </p>
       </div>
       <div className="flex flex-row w-full justify-evenly">
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front" />
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front"/>
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front"/>
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
       </div>
       <div className="flex flex-row w-full justify-evenly">
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front"/>
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front"/>
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
-      <div className="scene">
-        <div className="cube">
-          <div className="cube__face cube__face--front"/>
-          <div className="cube__face cube__face--back"/>
-          <div className="cube__face cube__face--right"/>
-          <div className="cube__face cube__face--left"/>
-          <div className="cube__face cube__face--top"/>
-          <div className="cube__face cube__face--bottom"/>
-        </div>
+      <div className="solid">
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
+        <div className="side"></div>
       </div>
       </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
