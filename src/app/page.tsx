@@ -145,7 +145,7 @@ export default function Home() {
           <span className="text-green-400">Python, GraphQL, MongoDB</span>
           <br />
           Familiar Spirit:{" "}
-          <span className="text-green-400">Peridot (black cat)</span>
+          <span className="text-green-400">Peridot (a small black cat)</span>
         </p>
       </div>
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
@@ -224,7 +224,7 @@ export default function Home() {
         <div className="side"></div>
       </div>
       </div>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly w-full text-green-400 font-mono text-xs bg-gray-900/75">
+      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly text-green-400 font-mono text-xs bg-gray-900/75">
         <p>
           <span className="text-green-600">Professional Inquiries: </span>
           adam.j.delcano@gmail.com
