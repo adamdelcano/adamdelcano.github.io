@@ -29,12 +29,14 @@ export default function Home() {
       loop: true,
     });
     const whyCareTyped = new Typed(whyCare.current, {
-      strings: ["^2000 You want me to do that for you."],
+      strings: ["^2000You want me to do that for you."],
       typeSpeed: 50,
     });
     const contactTyped = new Typed(contactPointer.current, {
-      strings: ["^4000 Check the bottom of the page for contact information."],
+      strings: ["^4000Professional Inquiries: adam.j.delcano@gmail.com\nPersonal Contact: robotmascot@gmail.com\nsocials: @robotmascot on bsky.app and treehouse.systems.social"],
       typeSpeed: 50,
+      showCursor: false,
+      loop: false
     });
 
     return () => {
@@ -46,7 +48,7 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-6 px-18 bg-cover bg-slate-950">
+    <main className="flex min-h-screen flex-col items-center justify-start p-6 mx-auto bg-cover bg-slate-950">
       <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
         <p className="flex flex-row text-5xl has-tooltip">
           ⍝
@@ -62,15 +64,18 @@ export default function Home() {
           </span>
         </p>
         <div className="flex flex-row text-xl justify-between gap-6">
-          <a href="#" className="m-auto hover:bg-bg-green-900">
-            DEEDS
+          <a href="#" className="m-auto hover:bg-green-900">
+            ABOUT
           </a>
-          <a href="#" className="m-auto hover:bg-bg-green-900">
-            [REDACTED]
+          <a href="#" className="m-auto hover:bg-green-900">
+            WRITING
+          </a>
+          <a href="#" className="m-auto hover:bg-green-900">
+            PROJECTS
           </a>
         </div>
       </header>
-      <div className="flex flex-row w-full justify-between">
+      <div className="flex flex-col md:flex-row w-full justify-between">
         <form className="max-w-lg self-start justify-self-start">
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -78,13 +83,14 @@ export default function Home() {
                 className="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
                 htmlFor="grid-name"
               >
-                Who is this clown?
+                Whose site is this?
               </label>
               <input
                 className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 mb-3 leading-tight disabled"
                 id="grid-name"
                 type="text"
                 ref={myName}
+                disabled
               />
             </div>
             <div className="w-full md:w-1/2 px-3">
@@ -100,6 +106,7 @@ export default function Home() {
                 type="text"
                 placeholder=""
                 ref={mission}
+                disabled
               />
             </div>
           </div>
@@ -115,6 +122,7 @@ export default function Home() {
                 className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
                 id="grid-password"
                 ref={whyCare}
+                disabled
               />
             </div>
           </div>
@@ -126,10 +134,12 @@ export default function Home() {
               >
                 How can I get in touch?
               </label>
-              <input
-                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight disabled"
+              <textarea
+                className="appearance-none block w-full bg-gray-900 text-green-400 border border-gray-900 rounded py-3 px-4 leading-tight"
                 id="contact-pointer"
                 ref={contactPointer}
+                disabled
+                rows={5}
               />
             </div>
           </div>
@@ -225,18 +235,6 @@ export default function Home() {
       </div>
       </div>
       <footer className="fixed bottom-0 flex flex-row items-center justify-evenly text-green-400 font-mono text-xs bg-gray-900/75">
-        <p>
-          <span className="text-green-600">Professional Inquiries: </span>
-          adam.j.delcano@gmail.com
-        </p>
-        <p>
-          <span className="text-green-600">Personal Contact: </span>{" "}
-          robotmascot@gmail.com
-        </p>
-        <p>
-          <span className="text-green-600">Elsewhere: </span> Wherever
-          robotmascot isn&apos;t the UK marketing agency (no offense, they&apos;re nice)
-        </p>
         <p className="flex flex-row self-center">2024 Adam del Cano</p>
       </footer>
     </main>
