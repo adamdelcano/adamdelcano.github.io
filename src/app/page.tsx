@@ -151,8 +151,8 @@ export default function Home() {
       <div className="flex flex-row w-full justify-evenly my-20 py-5">
       <div className="border-4 border-slate-600 before:block before:absolute before:-inset-1 before:-skew-y-6 before:bg-pink-500/50 before:hover:bg-pink-500/75 before:scale-50 before:hover:scale-75 relative inline-block">
       <div className="solid">
-        <div className="side"><p>Project A</p></div>
-        <div className="side"><span>Project A</span></div>
+        <div className="side"><p className="side">Project A</p></div>
+        <div className="side"><span className="side">Project A</span></div>
         <div className="side"><p>Project A</p></div>
         <div className="side"><span>Project A</span></div>
         <div className="side"><p>Project B</p></div>
@@ -223,7 +223,7 @@ export default function Home() {
         <div className="side"></div>
       </div>
       </div>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-evenly text-green-400 font-mono text-xs bg-gray-900/75">
+      <footer className="fixed max-w-min bottom-0 flex flex-row items-center justify-evenly text-green-400 font-mono text-xs bg-gray-900/75">
         <p>
           <span className="text-green-600">Professional Inquiries: </span>
           adam.j.delcano@gmail.com
