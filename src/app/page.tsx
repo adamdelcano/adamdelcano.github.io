@@ -48,9 +48,9 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-6 mx-auto bg-cover bg-slate-950">
-      <header className="flex flex-row justify-between w-full text-green-400 font-mono p-18">
-        <p className="flex flex-row text-5xl has-tooltip">
+    <main className="flex min-h-screen lg:w-2/3 flex-col items-center justify-start p-6 mx-auto bg-cover bg-slate-950">
+      <header className="flex flex-col md:flex-row justify-items-end w-full text-green-400 font-mono p-18">
+        <p className="text-5xl text-center md:text-left has-tooltip w-screen">
           ⍝
           <span className="tooltip text-xs m-18 bg-slate-900">
             If you&apos;re curious, this is the{" "}
@@ -63,7 +63,7 @@ export default function Home() {
             symbol for comment, sometimes named a lamp.
           </span>
         </p>
-        <div className="flex flex-row text-xl justify-between gap-6">
+        <div className="flex flex-row md:text-xl justify-items-end md:gap-6">
           <a href="#" className="m-auto hover:bg-green-900">
             ABOUT
           </a>
@@ -72,6 +72,9 @@ export default function Home() {
           </a>
           <a href="#" className="m-auto hover:bg-green-900">
             PROJECTS
+          </a>
+          <a href="#" className="m-auto hover:bg-green-900">
+            RESUME
           </a>
         </div>
       </header>
