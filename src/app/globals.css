@@ -15,7 +15,7 @@
   }
 }
 
-a{
+a {
   text-decoration: underline;
 }
 p {
@@ -50,7 +50,7 @@ body {
   width: 200px;
   height: 200px;
   -webkit-animation: spin 40s infinite linear;
-          animation: spin 40s infinite linear;
+  animation: spin 40s infinite linear;
   transform-style: preserve-3d;
 }
 .solid .side {

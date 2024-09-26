@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import adamPic from "/public/adam.jpeg";
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Link from "next/link";
@@ -10,6 +9,8 @@ import Intro from "@/Components/Intro/Intro";
 import Footer from "@/Components/Footer/Footer";
 import Familiars from "@/Components/Familiars/Familiars";
 import Spinner from "@/Components/Spinner/Spinner";
+import adamPic from "/public/adam.jpeg";
+import adamTransparent from "/public/adam_transparent_bg.png";
 
 export default function Home() {
   return (
@@ -63,10 +64,10 @@ export default function Home() {
           </p>
           <p></p>
         </div>
-        <div className="flex h-full ml-auto my-auto">
+        <div className="h-full ml-auto my-auto">
           <Image
-            className="rounded-full max-h-48 max-w-48"
-            src={adamPic}
+            className="rounded-full max-w-52 before:bg-white before:absolute before:max-w-56"
+            src={adamTransparent}
             alt="Adam del Cano's Portrait"
           />
         </div>
