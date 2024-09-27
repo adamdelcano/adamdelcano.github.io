@@ -17,7 +17,7 @@ export default function Home() {
   return (
     
     <main className="flex max-w-full min-h-screen flex-col items-center">
-      <div className="text-green-200 sm:w-2/3 my-12">
+      <div className="text-green-100 sm:w-2/3 my-12">
         <Image
             src={adamPic}
             alt="Adam del Cano"
@@ -26,7 +26,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl">Hello!</h1>
           <p>
-            I&apos;m <span className="text-green-500 has-tooltip">Adam del Cano<span className="tooltip text-green-200"> he/him</span></span>.
+            I&apos;m <span className="text-green-500 has-tooltip">Adam del Cano<span className="tooltip text-green-100"> he/him</span></span>.
           </p>
           <p>
             If you&apos;re reading this, this site is still very much under construction! Pardon the... everything.
