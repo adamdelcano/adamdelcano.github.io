@@ -41,7 +41,7 @@ export default function Home() {
             The nav tabs will take you to more about me, my blog, my self-contained projects, and my resume.
           </p>
           <p>
-            If you want to see me me doing frontend stuff, that&apos;s here- scroll down and check it out.
+            If you want to see me showcase frontend stuff, that&apos;s here- scroll down and check it out.
           </p>
           <p></p>
         </div>     
