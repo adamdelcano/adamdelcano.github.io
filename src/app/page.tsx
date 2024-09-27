@@ -58,6 +58,9 @@ export default function Home() {
             I&apos;m <span className="text-green-500 has-tooltip">Adam del Cano<span className="tooltip text-green-200"> he/him</span></span>.
           </p>
           <p>
+            If you're reading this, this site is still very much under construction! Pardon the... everything.
+          </p>
+          <p>
             I do full-stack development with an emphasis on frontend and web
             development. I enjoy building websites- there&apos;s something
             profoundly satisfying about the cycle of iterating with feedback. It
@@ -67,6 +70,9 @@ export default function Home() {
             I have a bunch of hobbies, most of which boil down to getting
             really, <em>really</em> interested in something and then tinkering
             with it.
+          </p>
+          <p>
+
           </p>
           <p></p>
         </div>     
