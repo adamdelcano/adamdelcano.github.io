@@ -33,11 +33,11 @@ body {
 }
 
 .tooltip {
-  @apply invisible absolute top-5 text-xs p-1 rounded;
+  @apply transition-opacity duration-300 opacity-0 absolute text-xs p-1 rounded;
 }
 
 .has-tooltip:hover .tooltip {
-  @apply visible z-50;
+  @apply transition-opacity duration-300 opacity-100 z-50;
 }
 
 @layer utilities {

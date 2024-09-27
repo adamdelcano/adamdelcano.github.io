@@ -20,7 +20,7 @@ export default function Home() {
       <header className="flex flex-col md:flex-row justify-items-end w-full text-green-200 font-mono p-18">
         <div className="text-5xl text-center md:text-left has-tooltip w-screen max-w-full">
           <span>⍲</span>
-          <span className="tooltip text-xs m-18 max-w-full">
+          <span className="tooltip m-18 max-w-full">
             {"<-"}If you&apos;re curious, this is the{" "}
             <a
               href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols"
@@ -55,7 +55,7 @@ export default function Home() {
         <div>
           <h1 className="text-4xl">Hello!</h1>
           <p>
-            I&apos;m <span className="text-green-500">Adam del Cano</span>.
+            I&apos;m <span className="text-green-500 has-tooltip">Adam del Cano<span className="tooltip text-green-200"> he/him</span></span>.
           </p>
           <p>
             I do full-stack development with an emphasis on frontend and web
