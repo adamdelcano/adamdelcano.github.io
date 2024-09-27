@@ -16,36 +16,7 @@ import testAvatar from "/public/test_avatar.webp";
 export default function Home() {
   return (
     
-    <main className="flex min-h-screen lg:w-2/3 flex-col items-center justify-start p-6 mx-auto bg-cover bg-slate-950 text-lg">
-      <header className="flex flex-col md:flex-row justify-items-end w-full text-green-200 font-mono p-18">
-        <div className="text-5xl text-center md:text-left has-tooltip w-screen max-w-full">
-          <span>⍲</span>
-          <span className="tooltip m-18 max-w-full">
-            {"<-"}If you&apos;re curious, this is the{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/APL_syntax_and_symbols"
-              target="_blank"
-            >
-              APL
-            </a>{" "}
-            symbol for NAND. Not proficient with APL, just thought it was cool.
-          </span>
-        </div>
-        <div className="flex max-sm:flex-wrap md:text-xl justify-items-end md:gap-6">
-          <Link href="#" className="m-auto hover:bg-green-900 no-underline">
-            ABOUT
-          </Link>
-          <Link href="#" className="m-auto hover:bg-green-900 no-underline">
-            WRITING
-          </Link>
-          <Link href="#" className="m-auto hover:bg-green-900 no-underline">
-            PROJECTS
-          </Link>
-          <Link href="#" className="m-auto hover:bg-green-900 no-underline">
-            RESUME
-          </Link>
-        </div>
-      </header>
+    <main className="flex max-w-full min-h-screen flex-col items-center">
       <div className="text-green-200 sm:w-2/3 my-12">
         <Image
             src={adamPic}
@@ -67,20 +38,15 @@ export default function Home() {
             scratches an itch in my brain&apos;s heart.
           </p>
           <p>
-            I have a bunch of hobbies, most of which boil down to getting
-            really, <em>really</em> interested in something and then tinkering
-            with it.
+            The nav tabs will take you to more about me, my blog, my self-contained projects, and my resume.
           </p>
           <p>
-
+            If you want to see me me doing frontend stuff, that&apos;s here- scroll down and check it out.
           </p>
           <p></p>
         </div>     
         </div>
       <Spinner />
-      <footer className="mt-auto bottom-0 flex flex-row items-center justify-evenly text-green-100 font-mono text-xs bg-gray-900/75">
-        <p className="flex flex-row self-center">2024 Adam del Cano</p>
-      </footer>
     </main>
   );
 }

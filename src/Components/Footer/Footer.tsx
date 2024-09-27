@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <>
-      <footer className="fixed bottom-0 flex flex-row items-center justify-center w-full text-green-400 font-mono ">
-        <p className="text-xs">2024 Adam del Cano (big surprise on that name, I know)</p>
+      <footer className="mt-auto bottom-0 flex flex-row items-center justify-evenly text-green-200 font-mono text-xs">
+        <p className="flex flex-row self-center">2024 Adam del Cano</p>
       </footer>
     </>
   );
