@@ -18,7 +18,7 @@ export default function Home() {
     
     <main className="flex min-h-screen lg:w-2/3 flex-col items-center justify-start p-6 mx-auto bg-cover bg-slate-950 text-lg">
       <header className="flex flex-col md:flex-row justify-items-end w-full text-green-200 font-mono p-18">
-        <p className="text-5xl text-center md:text-left has-tooltip w-screen max-w-full">
+        <div className="text-5xl text-center md:text-left has-tooltip w-screen max-w-full">
           <span>⍲</span>
           <span className="tooltip text-xs m-18 max-w-full">
             {"<-"}If you&apos;re curious, this is the{" "}
@@ -30,7 +30,7 @@ export default function Home() {
             </a>{" "}
             symbol for NAND. Not proficient with APL, just thought it was cool.
           </span>
-        </p>
+        </div>
         <div className="flex max-sm:flex-wrap md:text-xl justify-items-end md:gap-6">
           <Link href="#" className="m-auto hover:bg-green-900 no-underline">
             ABOUT
@@ -46,10 +46,14 @@ export default function Home() {
           </Link>
         </div>
       </header>
-      <div className="flex text-green-200 sm:w-2/3 my-12">
-        <div className="flex flex-col sm:w-2/3">
-          <h1 className="text-3xl">Hello!</h1>
-
+      <div className="text-green-200 sm:w-2/3 my-12">
+        <Image
+            src={adamPic}
+            alt="Adam del Cano"
+            className="rounded-full float-right w-1/3"
+          />
+        <div>
+          <h1 className="text-4xl">Hello!</h1>
           <p>
             I&apos;m <span className="text-green-500">Adam del Cano</span>.
           </p>
