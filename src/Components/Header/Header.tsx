@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <>
-      <header className="flex flex-col md:flex-row justify-items-end w-full text-green-200 font-mono p-18">
+      <header className="flex flex-col md:flex-row justify-items-end w-full font-mono p-18">
         <div className="text-5xl text-center md:text-left has-tooltip w-screen max-w-full">
           <Link href="/" className="no-underline">
             ⍲
