@@ -17,11 +17,19 @@ export default function Home() {
   return (
     <main className="flex max-w-full flex-col items-center">
       <div className="text-green-100 sm:w-2/3 my-12">
-        <Image
-          src={adamPic}
-          alt="Adam del Cano"
-          className="rounded-full float-right w-1/3"
-        />
+        <div className="float-right w-1/3 relative duration-500 ease-in-out group">
+          <div className="w-full h-full rounded-full overflow-hidden duration-500 ease-in-out relative group-hover:scale-90">
+            <div className="absolute duration-500 ease-in-out bg-slate-100 right-0 top-0 rounded-full w-full h-full group-hover:scale-[86%] group-hover:top-[10%]"></div>
+            <Image
+              src={adamTransparent}
+              alt="Adam del Cano"
+              className="rounded-full duration-500 ease-in-out transform  group-hover:scale-150  group-hover:translate-y-6 z-50"
+            />
+          </div>
+          <p className="absolute w-1/2 right-1/4 rounded-xl -top-12 mx-auto text-center bg-slate-950 z-50 duration-300 ease-in opacity-0 group-hover:opacity-100">
+            Yup, that&apos;s <span className="text-green-500">me!</span>
+          </p>
+        </div>
         <div>
           <h1 className="text-4xl">Hello!</h1>
           <p>
