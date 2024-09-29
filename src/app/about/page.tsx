@@ -3,8 +3,8 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
-import Familiars from "@/Components/Familiars/Familiars";
-import Intro from "@/Components/Intro/Intro";
+import Familiars from "@/components/Familiars/Familiars";
+import Intro from "@/components/Intro/Intro";
 
 export default function About() {
   return (
