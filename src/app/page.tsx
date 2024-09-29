@@ -15,7 +15,6 @@ import testAvatar from "/public/test_avatar.webp";
 
 export default function Home() {
   return (
-    
     <main className="flex max-w-full min-h-screen flex-col items-center">
       <div className="text-green-100 sm:w-2/3 my-12">
         <Image
