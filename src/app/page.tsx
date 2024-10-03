@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -12,8 +12,16 @@ import Spinner from "@/components/Spinner/Spinner";
 import adamPic from "/public/adam.jpeg";
 import adamTransparent from "/public/adam_transparent_bg.png";
 import testAvatar from "/public/test_avatar.webp";
+import { s } from "framer-motion/client";
 
 export default function Home() {
+  const barWidth = useRef<null|HTMLDivElement>(null);
+  const [ width, setWidth ]  = useState(0);
+
+  useEffect(() => {
+    if (barWidth.current) {
+       setWidth(barWidth.current!.offsetWidth);
+  }}, [barWidth.current?.offsetWidth]);
   return (
     <main className="flex max-w-full flex-col items-center">
       <div className="text-green-100 sm:w-2/3 my-12">
@@ -62,12 +70,12 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-evenly my-20 py-5">
           <p className="mx-auto">
-            I can do things in vanilla html/css
+            If you want to minimize dependencies? I can do things in vanilla html/css.
             <span className="text-red-500 has-tooltip">
               *
               <span className="tooltip text-green-200">
                 This is <em>technically</em> using TailwindCSS&apos; preset
-                colors/distances.
+                colors/distances- but I can do without.
               </span>
             </span>
             .
@@ -76,9 +84,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-evenly my-20 py-5">
           <p className="mb-6 mx-auto">
-            I am also familiar with Framer Motion, a motion library for React
+            I am also familiar with Framer Motion, the most popular animation library for React.
           </p>
-          <div className="flex bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full">
+          <div className="bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full" ref={barWidth} >
             <motion.div
               className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
               animate={{
@@ -95,12 +103,46 @@ export default function Home() {
               }}
             />
             <motion.div
-              className="size-24"
+              className="size-24 absolute" 
               animate={{
-                x: [0, 400, 0],
+                x: [0, `calc(${width / 8}px - 12.5%)`, 0],
                 rotate: [0, 180, 0],
+                scale: [0/8, 0.125, 0/8],
                 borderRadius: ["0%", "50%", "0%"],
-                backgroundColor: ["#ffffff", "#7f1d1d", "#b91c1c", "#ffffff"],
+                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
+              }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+            />
+            <motion.div
+              className="size-24 absolute" 
+              animate={{
+                x: [0, `calc(${width / 4}px - 25%)`, 0],
+                rotate: [0, 180, 0],
+                scale: [0.125, 0.25, 0.125],
+                borderRadius: ["0%", "50%", "0%"],
+                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
+              }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+            />
+            <motion.div
+              className="size-24 absolute" 
+              animate={{
+                x: [0, `calc(${width / 2}px - 50%)`, 0],
+                rotate: [0, 180, 0],
+                scale: [0.25, 0.5, 0.25],
+                borderRadius: ["0%", "50%", "0%"],
+                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
+              }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+            />
+            <motion.div
+              className="size-24" 
+              animate={{
+                x: [0, `calc(${width}px - 100%)`, 0],
+                rotate: [0, 180, 0],
+                scale: [0.5, 1, 0.5],
+                borderRadius: ["0%", "50%", "0%"],
+                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
               }}
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
             />
