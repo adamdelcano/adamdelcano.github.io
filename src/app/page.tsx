@@ -61,36 +61,50 @@ export default function Home() {
           <p></p>
         </div>
         <div className="flex flex-col justify-evenly my-20 py-5">
-          <p className="mx-auto">I can do things in vanilla html/css<span className="text-red-500 has-tooltip">*<span className="tooltip text-green-200">This is <em>technically</em> using TailwindCSS&apos; preset colors/distances.</span></span>.</p>
+          <p className="mx-auto">
+            I can do things in vanilla html/css
+            <span className="text-red-500 has-tooltip">
+              *
+              <span className="tooltip text-green-200">
+                This is <em>technically</em> using TailwindCSS&apos; preset
+                colors/distances.
+              </span>
+            </span>
+            .
+          </p>
           <Spinner />
         </div>
-
-        <div className="flex bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row my-20 py-5 size-full">
-        <motion.div
-          className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
-          animate={{
-            scale: [1, 2, 2, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-          }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut",
-            times: [0, 0.2, 0.5, 0.8, 1],
-            repeat: Infinity,
-            repeatDelay: 1,
-          }}
-        />
-          <motion.div
-            className="size-24"
-            animate={{
-              x: [0, 400, 0],
-              rotate: [0, 180, 0],
-              borderRadius: ["0%", "50%", "0%"],
-              backgroundColor: ["#ffffff", "#7f1d1d", "#b91c1c", "#ffffff"],
-            }}
-            transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-          />
+        <div className="flex flex-col justify-evenly my-20 py-5">
+          <p className="mb-6 mx-auto">
+            I am also familiar with Framer Motion, a motion library for React
+          </p>
+          <div className="flex bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full">
+            <motion.div
+              className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
+              animate={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, 270, 270, 0],
+                borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+            />
+            <motion.div
+              className="size-24"
+              animate={{
+                x: [0, 400, 0],
+                rotate: [0, 180, 0],
+                borderRadius: ["0%", "50%", "0%"],
+                backgroundColor: ["#ffffff", "#7f1d1d", "#b91c1c", "#ffffff"],
+              }}
+              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+            />
+          </div>
         </div>
       </div>
     </main>
