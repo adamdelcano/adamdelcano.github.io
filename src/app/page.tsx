@@ -15,13 +15,14 @@ import testAvatar from "/public/test_avatar.webp";
 import { s } from "framer-motion/client";
 
 export default function Home() {
-  const barWidth = useRef<null|HTMLDivElement>(null);
-  const [ width, setWidth ]  = useState(0);
+  const barWidth = useRef<null | HTMLDivElement>(null);
+  const [width, setWidth] = useState(0);
 
   useEffect(() => {
     if (barWidth.current) {
-       setWidth(barWidth.current!.offsetWidth);
-  }}, [barWidth.current?.offsetWidth]);
+      setWidth(barWidth.current!.offsetWidth);
+    }
+  }, [barWidth.current?.offsetWidth]);
   return (
     <main className="flex max-w-full flex-col items-center">
       <div className="text-green-100 sm:w-2/3 my-12">
@@ -70,7 +71,9 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-evenly my-20 py-5">
           <p className="mx-auto">
-            If you want to minimize dependencies? I can do things in vanilla html/css.
+            If you want to minimize dependencies? I can do things in vanilla
+            html/css{" "}
+            {/* Future self: The period is after the nested spans, it doesn't need to go here. */}
             <span className="text-red-500 has-tooltip">
               *
               <span className="tooltip text-green-200">
@@ -84,9 +87,13 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-evenly my-20 py-5">
           <p className="mb-6 mx-auto">
-            I am also familiar with Framer Motion, the most popular animation library for React.
+            I am also familiar with Framer Motion, the most popular animation
+            library for React.
           </p>
-          <div className="bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full" ref={barWidth} >
+          <div
+            className="bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full"
+            ref={barWidth}
+          >
             <motion.div
               className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
               animate={{
@@ -103,18 +110,18 @@ export default function Home() {
               }}
             />
             <motion.div
-              className="size-24 absolute" 
+              className="size-24 absolute"
               animate={{
                 x: [0, `calc(${width / 8}px - 12.5%)`, 0],
                 rotate: [0, 180, 0],
-                scale: [0/8, 0.125, 0/8],
+                scale: [0 / 8, 0.125, 0 / 8],
                 borderRadius: ["0%", "50%", "0%"],
                 backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
               }}
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
             />
             <motion.div
-              className="size-24 absolute" 
+              className="size-24 absolute"
               animate={{
                 x: [0, `calc(${width / 4}px - 25%)`, 0],
                 rotate: [0, 180, 0],
@@ -125,7 +132,7 @@ export default function Home() {
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
             />
             <motion.div
-              className="size-24 absolute" 
+              className="size-24 absolute"
               animate={{
                 x: [0, `calc(${width / 2}px - 50%)`, 0],
                 rotate: [0, 180, 0],
@@ -136,7 +143,7 @@ export default function Home() {
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
             />
             <motion.div
-              className="size-24" 
+              className="size-24"
               animate={{
                 x: [0, `calc(${width}px - 100%)`, 0],
                 rotate: [0, 180, 0],
