@@ -19,7 +19,7 @@ export default function Home() {
       <div className="text-green-100 sm:w-2/3 my-12">
         <div className="float-right w-1/3 relative duration-500 ease-in-out group">
           <div className="w-full h-full rounded-full overflow-hidden duration-500 ease-in-out relative group-hover:scale-90">
-            <div className="absolute duration-500 ease-in-out bg-slate-100 right-0 top-0 rounded-full w-full h-full group-hover:scale-[86%] group-hover:top-[10%]"></div>
+            <div className="absolute duration-500 ease-in-out bg-gradient-to-br from-slate-200 to-slate-600 right-0 top-0 rounded-full w-full h-full group-hover:scale-[86%] group-hover:top-[10%]"></div>
             <Image
               src={adamTransparent}
               alt="Adam del Cano"
