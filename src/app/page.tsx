@@ -119,7 +119,6 @@ export default function Home() {
             ref={barWidth}
             dragControls={dragControls}
             dragListener={false}
-            drag="x"
             dragElastic={0.25}
             whileDrag={{transition: {duration: 0.3}, rotate: [null, 180], zIndex: 10}}
           >
