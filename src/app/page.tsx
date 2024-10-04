@@ -40,7 +40,7 @@ export default function Home() {
             borderRadius: ["0%", "50%", "0%"],
             backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
           }}
-          transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+          transition={{ duration: 4, repeat: Infinity, repeatDelay: 2 }}
         />
       );
     },
@@ -145,7 +145,7 @@ export default function Home() {
                 borderRadius: ["0%", "50%", "0%"],
                 backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
               }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+              transition={{ duration: 4, repeat: Infinity, repeatDelay: 2 }}
               drag="y"
               dragConstraints={barWidth}
               dragSnapToOrigin
