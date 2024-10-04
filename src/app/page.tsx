@@ -120,7 +120,6 @@ export default function Home() {
             dragControls={dragControls}
             dragListener={false}
             drag="x"
-            dragConstraints={{ left: -50, right: -50 }}
             dragElastic={0.25}
             whileDrag={{transition: {duration: 0.3}, rotate: [null, 180], zIndex: 10}}
           >
@@ -164,9 +163,9 @@ export default function Home() {
             className="bg-gradient-radial from-orange-700 to-orange-900 rounded-xl mx-auto w-1/6 justify-center group"
             onPointerDown={startDrag}
             dragControls={dragControls}
-            whileHover={{ transition: { duration: 0.5, repeat: Infinity }, scale: [1, 0.95, 1], color: "#dcfce7" }}
+            whileHover={{ transition: { duration: 0.5, repeat: Infinity }, scale: [1, 0.95, 1], color: "#dcfce7"}}
           >
-            <p className="mx-auto text-center my-0 py-0 select-none after:content-['Hover_Me'] group-hover:after:content-['Drag_Me']"></p>
+            <p className="mx-auto text-center my-1 select-none after:content-['Hover_Me'] group-hover:after:content-['Drag_Me']" />
           </motion.div>
         </div>
       </div>
