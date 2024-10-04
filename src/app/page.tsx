@@ -27,7 +27,9 @@ export default function Home() {
           key={i}
           className="size-24 absolute"
           drag="y"
+          dragElastic={0}
           dragSnapToOrigin
+          dragConstraints={barWidth}
           animate={{
             x: [
               0,
@@ -50,7 +52,7 @@ export default function Home() {
       <div className="text-green-100 sm:w-2/3 my-12">
         <div className="float-right w-1/3 relative duration-500 ease-in-out group">
           <div className="w-full h-full rounded-full overflow-hidden duration-500 ease-in-out relative group-hover:scale-90">
-            <div className="absolute duration-500 ease-in-out bg-gradient-to-br from-slate-200 to-slate-600 right-0 top-0 rounded-full w-full h-full group-hover:scale-[86%] group-hover:top-[10%]"></div>
+            <div className="absolute duration-500 ease-in-out bg-gradient-to-br from-slate-200 to-slate-600 right-0 top-0 rounded-full w-full h-full group-hover:scale-[86%] group-hover:top-[10%] group-hover:blur-lg"></div>
             <Image
               src={adamTransparent}
               alt="Adam del Cano"
@@ -112,13 +114,20 @@ export default function Home() {
             I am also familiar with Framer Motion, the most popular animation
             library for React.
           </p>
-          <div
+          <motion.div
             className="bg-gradient-to-r from-slate-950 to-red-500 via-orange-900 flex-row py-5 size-full"
             ref={barWidth}
+            dragControls={dragControls}
+            dragListener={false}
+            drag="x"
+            dragConstraints={{ left: -50, right: -50 }}
+            dragElastic={0.25}
+            whileDrag={{transition: {duration: 0.3}, rotate: [null, 180], zIndex: 10}}
           >
             <motion.div
               className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
               dragConstraints={barWidth}
+              dragElastic={1}
               drag
               dragSnapToOrigin
               animate={{
@@ -150,7 +159,15 @@ export default function Home() {
               dragConstraints={barWidth}
               dragSnapToOrigin
             />
-          </div>
+          </motion.div>
+          <motion.div
+            className="bg-gradient-radial from-orange-700 to-orange-900 rounded-xl mx-auto w-1/6 justify-center group"
+            onPointerDown={startDrag}
+            dragControls={dragControls}
+            whileHover={{ transition: { duration: 0.5, repeat: Infinity }, scale: [1, 0.95, 1], color: "#dcfce7" }}
+          >
+            <p className="mx-auto text-center my-0 py-0 select-none after:content-['Hover_Me'] group-hover:after:content-['Drag_Me']"></p>
+          </motion.div>
         </div>
       </div>
     </main>
