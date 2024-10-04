@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useDragControls } from "framer-motion";
 import Header from "@/components/Header/Header";
 import Intro from "@/components/Intro/Intro";
 import Footer from "@/components/Footer/Footer";
@@ -17,12 +17,35 @@ import { s } from "framer-motion/client";
 export default function Home() {
   const barWidth = useRef<null | HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
+  const dragControls = useDragControls();
 
+  function startDrag(event: React.PointerEvent | PointerEvent) {
+    dragControls.start(event);
+  };
   useEffect(() => {
     if (barWidth.current) {
       setWidth(barWidth.current!.offsetWidth);
     }
   }, [barWidth.current?.offsetWidth]);
+  
+  Array(12)
+  const squares = [2,3,4,5,6,7,8,9,10,11,12,13,14,15].map(
+     (size, i) => {return (
+      <motion.div
+      key={i}
+      className="size-24 absolute"
+      drag="y"
+      dragSnapToOrigin
+      animate={{
+        x: [0, `calc(${width / size}px - 50%)`, `calc(${width / size}px - 50%)`, 0],
+        rotate: [0, 180, 0],
+        scale: [0.5/size, 1/size, 0.5/size],
+        borderRadius: ["0%", "50%", "0%"],
+        backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
+      }}
+      transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+    />)}
+  );
   return (
     <main className="flex max-w-full flex-col items-center">
       <div className="text-green-100 sm:w-2/3 my-12">
@@ -96,11 +119,15 @@ export default function Home() {
           >
             <motion.div
               className="bg-gradient-to-bl from-orange-900 to-orange-400 size-24 border-2 border-gray-950 absolute"
+              dragConstraints={barWidth}
+              drag
+              dragSnapToOrigin
               animate={{
                 scale: [1, 2, 2, 1, 1],
                 rotate: [0, 0, 270, 270, 0],
                 borderRadius: ["20%", "20%", "50%", "50%", "20%"],
               }}
+              whileDrag={{zIndex: 10}}
               transition={{
                 duration: 2,
                 ease: "easeInOut",
@@ -109,49 +136,20 @@ export default function Home() {
                 repeatDelay: 1,
               }}
             />
-            <motion.div
-              className="size-24 absolute"
-              animate={{
-                x: [0, `calc(${width / 8}px - 12.5%)`, 0],
-                rotate: [0, 180, 0],
-                scale: [0 / 8, 0.125, 0 / 8],
-                borderRadius: ["0%", "50%", "0%"],
-                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
-              }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-            />
-            <motion.div
-              className="size-24 absolute"
-              animate={{
-                x: [0, `calc(${width / 4}px - 25%)`, 0],
-                rotate: [0, 180, 0],
-                scale: [0.125, 0.25, 0.125],
-                borderRadius: ["0%", "50%", "0%"],
-                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
-              }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-            />
-            <motion.div
-              className="size-24 absolute"
-              animate={{
-                x: [0, `calc(${width / 2}px - 50%)`, 0],
-                rotate: [0, 180, 0],
-                scale: [0.25, 0.5, 0.25],
-                borderRadius: ["0%", "50%", "0%"],
-                backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
-              }}
-              transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-            />
+            {squares}
             <motion.div
               className="size-24"
               animate={{
-                x: [0, `calc(${width}px - 100%)`, 0],
+                x: [null, `calc(${width}px - 100%)`, 0],
                 rotate: [0, 180, 0],
                 scale: [0.5, 1, 0.5],
                 borderRadius: ["0%", "50%", "0%"],
                 backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
               }}
               transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+              drag="y"
+              dragConstraints={barWidth}
+              dragSnapToOrigin
             />
           </div>
         </div>
