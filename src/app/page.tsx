@@ -1,18 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import Typed from "typed.js";
-import Link from "next/link";
 import { motion, useDragControls } from "framer-motion";
-import Header from "@/components/Header/Header";
-import Intro from "@/components/Intro/Intro";
-import Footer from "@/components/Footer/Footer";
-import Familiars from "@/components/Familiars/Familiars";
 import Spinner from "@/components/Spinner/Spinner";
-import adamPic from "/public/adam.jpeg";
 import adamTransparent from "/public/adam_transparent_bg.png";
-import testAvatar from "/public/test_avatar.webp";
-import { s } from "framer-motion/client";
 
 export default function Home() {
   const barWidth = useRef<null | HTMLDivElement>(null);
@@ -21,30 +12,38 @@ export default function Home() {
 
   function startDrag(event: React.PointerEvent | PointerEvent) {
     dragControls.start(event);
-  };
+  }
   useEffect(() => {
     if (barWidth.current) {
       setWidth(barWidth.current!.offsetWidth);
     }
   }, [barWidth.current?.offsetWidth]);
-  
-  Array(12)
-  const squares = [2,3,4,5,6,7,8,9,10,11,12,13,14,15].map(
-     (size, i) => {return (
-      <motion.div
-      key={i}
-      className="size-24 absolute"
-      drag="y"
-      dragSnapToOrigin
-      animate={{
-        x: [0, `calc(${width / size}px - 50%)`, `calc(${width / size}px - 50%)`, 0],
-        rotate: [0, 180, 0],
-        scale: [0.5/size, 1/size, 0.5/size],
-        borderRadius: ["0%", "50%", "0%"],
-        backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
-      }}
-      transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
-    />)}
+
+  Array(12);
+  const squares = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+    (size, i) => {
+      return (
+        <motion.div
+          key={i}
+          className="size-24 absolute"
+          drag="y"
+          dragSnapToOrigin
+          animate={{
+            x: [
+              0,
+              `calc(${width / size}px - 50%)`,
+              `calc(${width / size}px - 50%)`,
+              0,
+            ],
+            rotate: [0, 180, 0],
+            scale: [0.5 / size, 1 / size, 0.5 / size],
+            borderRadius: ["0%", "50%", "0%"],
+            backgroundColor: ["#ffffff", "#7f1d1d", "#ffffff"],
+          }}
+          transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+        />
+      );
+    },
   );
   return (
     <main className="flex max-w-full flex-col items-center">
@@ -127,7 +126,7 @@ export default function Home() {
                 rotate: [0, 0, 270, 270, 0],
                 borderRadius: ["20%", "20%", "50%", "50%", "20%"],
               }}
-              whileDrag={{zIndex: 10}}
+              whileDrag={{ zIndex: 10 }}
               transition={{
                 duration: 2,
                 ease: "easeInOut",
